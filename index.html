@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fala Aí English — Inglês no WhatsApp</title>
+  <meta name="description" content="Aprenda inglês de forma prática pelo WhatsApp. Teste grátis com 15 mensagens e evolua com aulas guiadas, correção e pronúncia aportuguesada." />
+  <meta property="og:title" content="Fala Aí English — Inglês no WhatsApp" />
+  <meta property="og:description" content="Teste grátis com 15 mensagens. Inglês prático, correções e pronúncia fácil para brasileiros." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root {
+      --bg: #07111f;
+      --card: #0f1d33;
+      --text: #e8f2ff;
+      --muted: #9db6d7;
+      --primary: #22c55e;
+      --primary-dark: #16a34a;
+      --secondary: #0ea5e9;
+      --border: #243a5e;
+      --warning: #f59e0b;
+      --max: 1080px;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 10% 0%, #0e2440 0%, var(--bg) 50%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .container { width: min(var(--max), 92vw); margin: 0 auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+      background: rgba(7, 17, 31, 0.7);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 12px;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: .2px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: #052e16;
+      background: #86efac;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-weight: 700;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #03230f;
+    }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .hero { padding: 72px 0 36px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: clamp(30px, 4.5vw, 52px);
+      line-height: 1.05;
+      margin: 0 0 14px;
+    }
+
+    .lead { font-size: clamp(16px, 2vw, 20px); color: var(--muted); margin: 0 0 20px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
+
+    .micro {
+      font-size: 14px;
+      color: #cde2ff;
+      background: rgba(14, 165, 233, .15);
+      border: 1px solid rgba(14,165,233,.4);
+      padding: 10px 12px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    .section { padding: 34px 0; }
+    .section h2 { margin: 0 0 14px; font-size: clamp(24px, 3vw, 34px); }
+    .section p.sub { margin: 0 0 20px; color: var(--muted); }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .item h3 { margin: 6px 0 8px; font-size: 18px; }
+    .item p { margin: 0; color: var(--muted); font-size: 15px; }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .price {
+      font-size: 34px;
+      font-weight: 800;
+      margin: 8px 0;
+    }
+
+    ul { margin: 0; padding-left: 18px; color: var(--muted); }
+
+    .faq details {
+      background: #0c1a2e;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 28px 0 48px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .center { text-align: center; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .grid-3, .pricing { grid-template-columns: 1fr; }
+      .hero { padding-top: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">🇺🇸 Fala Aí English</div>
+      <a class="btn btn-primary" href="https://wa.me/15123004042?text=Quero%20come%C3%A7ar%20meu%20teste%20gr%C3%A1tis%20de%2015%20mensagens">Começar no WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">15 mensagens grátis</span>
+          <h1>Aprenda inglês no WhatsApp, de forma prática e guiada.</h1>
+          <p class="lead">Treine todos os dias com correções rápidas, pronúncia aportuguesada e um método simples para evoluir sem travar.</p>
+
+          <div class="cta-row">
+            <a id="cta_whatsapp_top" class="btn btn-primary" href="https://wa.me/15123004042?text=Quero%20come%C3%A7ar%20meu%20teste%20gr%C3%A1tis%20de%2015%20mensagens">Começar grátis no WhatsApp</a>
+            <a id="cta_checkout_top" class="btn btn-secondary" href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2929c4d2292b43aa9061bb4b19e251e7">Assinar por R$39,90/mês</a>
+          </div>
+          <div class="micro">Sem app complicado. Sem aula chata. Você pratica no seu ritmo, com direção clara.</div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Como funciona</h3>
+          <p style="color:var(--muted)">Em 3 passos:</p>
+          <ol style="color:var(--muted); padding-left:18px; margin:0;">
+            <li>Você começa com 15 mensagens grátis.</li>
+            <li>Recebe prática diária guiada (10–15 min).</li>
+            <li>Se quiser continuar, assina e mantém evolução.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Por que o Fala Aí English funciona</h2>
+        <p class="sub">Método leve, consistente e focado em resultado real no dia a dia.</p>
+        <div class="grid-3">
+          <div class="card item">
+            <h3>✅ Inglês útil</h3>
+            <p>Situações reais: trabalho, viagem, mercado, conversa do dia a dia.</p>
+          </div>
+          <div class="card item">
+            <h3>🗣️ Pronúncia simples</h3>
+            <p>Você recebe a versão de som em português para falar com mais confiança.</p>
+          </div>
+          <div class="card item">
+            <h3>📈 Evolução guiada</h3>
+            <p>Trilha em etapas com prática, correção objetiva e próximo passo claro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Plano simples e direto</h2>
+        <p class="sub">Comece grátis e continue só se fizer sentido para você.</p>
+
+        <div class="pricing">
+          <div class="card">
+            <h3>Teste grátis</h3>
+            <div class="price">15 mensagens</div>
+            <ul>
+              <li>Correções com clareza</li>
+              <li>Pronúncia aportuguesada</li>
+              <li>Prática guiada no WhatsApp</li>
+            </ul>
+            <p style="margin-top:16px"><a id="cta_whatsapp_pricing" class="btn btn-primary" href="https://wa.me/15123004042?text=Quero%20come%C3%A7ar%20o%20teste%20gr%C3%A1tis">Começar grátis</a></p>
+          </div>
+
+          <div class="card" style="border-color:#22c55e; box-shadow: 0 0 0 1px rgba(34,197,94,.2) inset;">
+            <h3>Assinatura mensal</h3>
+            <div class="price">R$39,90<span style="font-size:16px; color:var(--muted)">/mês</span></div>
+            <ul>
+              <li>Acesso contínuo ao tutor</li>
+              <li>Treino diário orientado</li>
+              <li>Foco em fala e confiança</li>
+            </ul>
+            <p style="margin-top:16px"><a id="cta_checkout_pricing" class="btn btn-secondary" href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2929c4d2292b43aa9061bb4b19e251e7">Assinar agora</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+
+        <details>
+          <summary>Preciso baixar aplicativo?</summary>
+          <p>Não. Você aprende direto no WhatsApp.</p>
+        </details>
+
+        <details>
+          <summary>Esse curso serve para iniciantes?</summary>
+          <p>Sim. O conteúdo adapta ao seu nível e evolui com você.</p>
+        </details>
+
+        <details>
+          <summary>Como funciona o teste grátis?</summary>
+          <p>Você recebe 15 mensagens para testar. Depois, decide se quer assinar.</p>
+        </details>
+
+        <details>
+          <summary>Posso cancelar quando quiser?</summary>
+          <p>Sim, o gerenciamento da assinatura é feito de forma simples.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section center">
+      <div class="container card">
+        <h2 style="margin-top:0">Bora destravar seu inglês hoje?</h2>
+        <p class="sub">Comece com 15 mensagens grátis no WhatsApp.</p>
+        <a id="cta_whatsapp_bottom" class="btn btn-primary" href="https://wa.me/15123004042?text=Quero%20come%C3%A7ar%20agora">Começar agora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Fala Aí English • falaaienglish.com
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function track(eventName) {
+      if (!window.dataLayer) return;
+      window.dataLayer.push({ event: eventName });
+    }
+
+    ['cta_whatsapp_top','cta_checkout_top','cta_whatsapp_pricing','cta_checkout_pricing','cta_whatsapp_bottom']
+      .forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('click', () => track(id));
+      });
+  </script>
+</body>
+</html>
