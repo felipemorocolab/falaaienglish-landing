@@ -8,6 +8,7 @@
   <meta property="og:title" content="Fala Aí English — Inglês no WhatsApp" />
   <meta property="og:description" content="Teste grátis com 15 mensagens. Inglês prático, correções e pronúncia fácil para brasileiros." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://falaaienglish.com/assets/logo-falaaienglish.jpg" />
   <meta name="theme-color" content="#0ea5e9" />
   <style>
     :root {
@@ -58,6 +59,23 @@
       display: flex;
       gap: 8px;
       align-items: center;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,.25);
+    }
+
+    .hero-logo {
+      width: 100%;
+      max-width: 360px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      display: block;
+      margin: 0 auto 16px;
     }
 
     .badge {
@@ -186,7 +204,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="brand">🇺🇸 Fala Aí English</div>
+      <div class="brand"><img src="/assets/logo-falaaienglish.jpg" alt="Logo Fala Aí English" /> Fala Aí English</div>
       <a class="btn btn-primary" href="https://wa.me/15123004042?text=Quero%20come%C3%A7ar%20meu%20teste%20gr%C3%A1tis%20de%2015%20mensagens">Começar no WhatsApp</a>
     </div>
   </header>
@@ -207,6 +225,7 @@
         </div>
 
         <div class="card">
+          <img class="hero-logo" src="/assets/logo-falaaienglish.jpg" alt="Fala Aí English" />
           <h3 style="margin-top:0">Como funciona</h3>
           <p style="color:var(--muted)">Em 3 passos:</p>
           <ol style="color:var(--muted); padding-left:18px; margin:0;">
@@ -307,7 +326,8 @@
 
   <footer>
     <div class="container">
-      © <span id="year"></span> Fala Aí English • falaaienglish.com
+      © <span id="year"></span> Fala Aí English • falaaienglish.com<br/>
+      Contato e suporte: <a href="mailto:suporte@falaaienglish.com" style="color:#cde2ff;">suporte@falaaienglish.com</a>
     </div>
   </footer>
 
